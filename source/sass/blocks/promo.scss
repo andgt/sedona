@@ -1,0 +1,227 @@
+.promo {
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+  margin-top: 56px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 2;
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.promo--form {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.promo--catalog {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
+}
+
+.promo__inner-decor {
+  min-height: 389px;
+  margin-bottom: 32px;
+  padding-top: 90px;
+  background-image: url("../img/mobile/back-mobile.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: $blue;
+  background-repeat: no-repeat;
+  clip-path: polygon(100% 0, 100% 93.32%, 50% 100%, 0 93.32%, 0 0);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+    clip-path: polygon(100% 0, 100% 93.32%, 95.69% 93.5%, 95.69% 88.81%, 50% 100%, 4.5% 89%, 4.5% 93.5%, 0 93.32%, 0 0);
+    background-image: url("../img/tablet/back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+    clip-path: polygon(100% 0, 100% 89.3%, 79.36% 93.50%, 79.02% 89.2%, 50% 100%, 20.83% 89.19%, 20.75% 93.31%, 2px 89.06%, 0 0);
+  }
+}
+
+.promo__inner-page {
+  padding-top: 52px;
+  background-image: url("../img/mobile/promo-form.jpg");
+  background-size: cover;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 158px;
+    clip-path: polygon(100% 0, 100% 83.67%, 50% 100%, 2px 83.67%, 0 0);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 289px;
+    margin-bottom: 56px;
+    padding-top: 94px;
+    padding-bottom: 120px;
+    background-image: url("../img/promo-form.jpg");
+    clip-path: polygon(100% 0, 100.08% 86.49%, 95.77% 88.27%, 95.73% 79.61%, 50.26% 99.07%, 4.55% 79.25%, 4.55% 88.07%, 0 86.49%, 0 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+    padding-top: 100px;
+    background-image: url("../img/desktop/promo-form.jpg");
+    clip-path: polygon(100% 0, 100.08% 81.74%, 79.52% 88.65%, 79.31% 81.04%, 50.01% 100.1%, 20.88% 81.68%, 20.72% 88.45%, 0 81.74%, 0 0);
+  }
+}
+
+.promo__inner-page--form {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 108px;
+  }
+}
+
+.promo__inner-text {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+  }
+}
+
+.promo__logo {
+  width: 102px;
+  height: 84px;
+}
+
+.promo__img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 349px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 769px) {
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
+  }
+}
+
+.promo__img--inner-page {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 456px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
+    height: 79px;
+  }
+}
+
+.promo__title {
+  margin-bottom: 31px;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.promo__title--inner {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 3rem;
+  }
+}
+
+.promo__title--form {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 3rem;
+  }
+}
+
+.promo__title-element-first {
+  padding-right: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 2px;
+  }
+}
+
+.promo__title-element-second {
+  padding: 2px 1px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 5px 0 0;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.promo__text--inner {
+  max-width: 434px;
+  margin: 0 auto;
+}
+
+.promo__text--form {
+  max-width: 440px;
+  padding: 1px 2px 0 0;
+}

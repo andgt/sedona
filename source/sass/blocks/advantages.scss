@@ -1,0 +1,239 @@
+.advantages {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    background-color: $grey;
+  }
+}
+
+.advantages-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.advantages-cards__item {
+  position: relative;
+  background-color: $grey;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    min-height: 256px;
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
+  }
+}
+
+.advantages-cards__item--labelled {
+  background-color: $blue;
+
+  &::after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.advantages-cards__item--sub {
+  clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 33.3% 66.6% 1fr;
+    clip-path: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+.advantages-cards__item--bridge {
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 66.6% 33.3%;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 400px;
+  }
+}
+
+.advantages-cards__inner {
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 42px 36px;
+  }
+}
+
+.advantages-cards__inner--first {
+  padding: 50px 5px 39px 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 32px 44px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+  }
+}
+
+.advantages-cards__inner--bridge {
+  margin-bottom: 35px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    min-width: 256px;
+    margin-bottom: 0;
+    padding: 42px 36px 41px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 400px;
+    padding-top: 52px;
+  }
+}
+
+.advantages-cards__title {
+  margin-bottom: 11px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.advantages-cards__title--custom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.advantages-cards__title-labelled {
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    max-width: 210px;
+    margin: 0 auto 14px auto;
+  }
+}
+
+.advantages-cards__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 23px;
+    padding: 0;
+  }
+}
+
+.advantages-cards__text--paragraph {
+  @media (min-width: $tablet-width) {
+    padding: 0 14px;
+  }
+}
+
+.advantages-cards__text-labelled {
+  padding: 0;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 35px;
+  }
+}
+
+.advantages-cards__text-labelled--bridge {
+  @media (min-width: $desktop-width) {
+    padding: 0 49px;
+  }
+}
+
+.advantages-cards__img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    min-width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.advantages-cards__img--labelled {
+  order: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 512px;
+  }
+}
+
+.advantages-cards__img--sub {
+  grid-column: 2 / -1;
+}

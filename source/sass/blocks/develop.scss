@@ -1,0 +1,26 @@
+.develop {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.develop__text {
+  padding-bottom: 7px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+}
+
+.develop__link {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+  }
+}

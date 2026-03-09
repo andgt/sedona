@@ -1,0 +1,492 @@
+.form {
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.form__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  row-gap: 32px;
+  margin: 0;
+  padding: 21px 0 0 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 95px;
+  }
+}
+
+.form__inner-wrapper--attractions {
+  row-gap: 24px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+    padding: 21px 0 0 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 0;
+    margin: 0;
+    padding: 21px 0 0 0;
+  }
+}
+
+.form__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(min-content, min-content) minmax(0, 1fr);
+  align-items: center;
+  column-gap: 14px;
+  margin-bottom: 20px;
+}
+
+.form__inner:last-child {
+  margin-bottom: 0;
+}
+
+.form__inner--vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__inner--contacts {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.form__inner--phone {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.form__inner--display {
+  display: flex;
+  column-gap: 22px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 19px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 20px;
+  }
+}
+
+.form__inner--attractions {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 24px;
+    min-width: 189px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 205px;
+  }
+}
+
+.form__inner--attractions:first-child {
+  @media (min-width: $desktop-width) {
+    margin-right: 68px;
+  }
+}
+
+.form__inner--attractions:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-right: 69px;
+  }
+}
+
+.form__inner--attractions:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+  }
+}
+
+
+.form__inner--message {
+  padding: 0;
+}
+
+.form__title {
+  margin: 0 auto 19px auto;
+  padding: 0;
+  text-align: center;
+}
+
+.form__title--impression {
+  margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 78px;
+  }
+}
+
+.form__title--basic {
+  position: relative;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 123px;
+      height: 1px;
+      background-color: $dark-grey2;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}
+
+.form__title--attractions {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 180px 0 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0 3px 25px 0;
+    padding: 0 282px 0 285px;
+  }
+}
+
+.form__title--vertical {
+  width: 100%;
+}
+
+.form__title--message {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      top: 40%;
+      left: 10px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      top: 40%;
+      right: 11px;
+    }
+  }
+}
+
+.form__title--top {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+    text-align: left;
+  }
+}
+
+.form__title--introduce {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.form__title--contacts {
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  &::before,
+  &::after {
+    @media (min-width: $tablet-width) {
+      top: 9px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: 6px;
+    margin-bottom: 74px;
+  }
+}
+
+.form__label {
+  position: relative;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__label-text {
+  display: block;
+  margin-left: 22px;
+  margin-bottom: 8px;
+}
+
+.form__label-text--mail {
+  margin-bottom: 6px;
+}
+
+.form__label-text--contacts {
+  @media (min-width: $desktop-width) {
+    margin: 16px 0 0 0;
+  }
+}
+
+.form__label--change {
+  order: 2;
+  width: auto;
+  padding: 0;
+}
+
+.form__inner-text {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__label--contacts {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.form__text-highlated {
+  padding-top: 4px;
+  user-select: none;
+
+  @include typography(700, 1.8rem, 1.4);
+  color: $black;
+  text-transform: unset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
+  }
+}
+
+.form__text-highlated--attractions {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.form__input {
+  width: 100%;
+  height: 58px;
+  margin: 0;
+  padding: 16px 22px 14px 22px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 1.4;
+  border: 0;
+  background-color: $light-grey;
+  transition: 0.3s ease;
+
+  @include typography(700, 1.8rem, 1.4);
+
+  &::placeholder {
+    color: $black;
+  }
+
+  &:hover {
+    background-color: $blonde-grey;
+    transition: 0.3s ease;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $blue;
+  }
+
+  &:disabled {
+    background-color: $dark-grey1;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 57px;
+  height: 57px;
+  background: center center / 18px 18px no-repeat $blonde-grey1;
+
+  @media (min-width: $tablet-width) {
+    right: 10px;
+  }
+}
+
+.form__icon--phone {
+  background-image: url("../img/vector/icon-phone.svg");
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    right: 80px;
+  }
+}
+
+.form__icon--mail {
+  top: 31px;
+  background-image: url("../img/vector/icon-mail.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    right: 1px;
+  }
+}
+
+.form__label--contacts::before:has(+ .form__input:disabled) {
+  background-color: $dark-grey1;
+}
+
+.form__input--change {
+  all: unset;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  z-index: 2;
+  cursor: pointer;
+  appearance: none;
+}
+
+.form__input--contacts {
+  padding: 14px 22px 9px 22px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 316px;
+    padding: 8px 22px 9px 22px;
+  }
+}
+
+.form__custom-input {
+  position: relative;
+  order: 1;
+  width: 56px;
+  height: 56px;
+  background-color: $light-grey;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__custom-input--radio {
+  border-radius: 50%;
+}
+
+.form__input--change:checked + .form__custom-input {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 23px;
+    height: 16px;
+    background-image: url("../img/vector/tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.form__input--change:checked + .form__custom-input--radio {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-image: none;
+    background-color: $signalblack;
+  }
+}
+
+.form__input--change:hover {
+  background-color: unset;
+}
+
+.form__input--change:hover + .form__custom-input {
+  background-color: $blonde-grey;
+}
+
+.form__input--contacts:disabled + .form__icon {
+  background-color: $dark-grey1;
+  cursor: auto;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 160px;
+  margin: 0 0 51px 0;
+  padding: 13px 23px 29px 21px;
+  border: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: $light-grey;
+  resize: none;
+
+  &::placeholder {
+    color: $black;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 18px;
+  }
+}

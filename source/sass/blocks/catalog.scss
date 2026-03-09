@@ -1,0 +1,14 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px 53px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 56px 0;
+  }
+}

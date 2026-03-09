@@ -1,0 +1,159 @@
+.video {
+  order: 2;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: $black02;
+  }
+}
+
+.video__control {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  padding: 22px 23px 23px 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 35px 41px 37px 35px;
+  }
+}
+
+.video__button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.video__button--repeat {
+  order: 1;
+  width: 16px;
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin-right: 42px;
+  }
+}
+
+.video__range {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  display: grid;
+  order: 0;
+  width: 100%;
+  min-height: 45px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    order: 1;
+    width: 389px;
+    min-height: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 75%;
+    margin-right: 38px;
+  }
+}
+
+.video__label {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  display: flex;
+  height: 45px;
+  background-color: $black;
+  opacity: 60%;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    opacity: 1;
+    height: 0;
+  }
+}
+
+.video__range-input {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  width: 84%;
+  height: 3px;
+  margin: 0;
+  z-index: 1;
+  background-color: $white02;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-self: left;
+  }
+}
+
+.video__range-input::-webkit-slider-thumb {
+  width: 9px;
+  height: 9px;
+  background-color: $white;
+  border: none;
+  border-radius: 50%;
+}
+
+.video__range-input::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  background-color: $white;
+  border: none;
+  border-radius: 50%;
+}
+
+.video__button--subtitle {
+  order: 2;
+  width: 32px;
+  height: 20px;
+  margin: 0 31px 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 31px 0 0;
+  }
+}
+
+.video__button--fullscreen {
+  order: 3;
+  width: 20px;
+  height: 20px;
+}
+
+.video__icon {
+  &:hover path {
+    fill: $signalblack;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: 60%;
+    }
+  }
+}
+
+.video__icon path {
+  @media (min-width: $tablet-width) {
+    fill: $white;
+  }
+}

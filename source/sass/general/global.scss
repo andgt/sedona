@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+.container {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px;
+  }
+}
+
+.container--form {
+  @media (min-width: $tablet-width) {
+    margin: 0 50px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 3px;
+  }
+}
+
+.container--form-contacts {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+.container--form-attractions {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.container--introduce {
+  @media (min-width: $tablet-width) {
+    margin-right: 58px;
+    padding-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    padding-left: 80px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+
+  @include typography(700, 1.8rem, 1.4);
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+}
+
+.button {
+  @include typography(700, 2.1rem, 1.2);
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $deep-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: $opacity-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $orange;
+  }
+}

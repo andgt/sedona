@@ -1,0 +1,24 @@
+@mixin reset-list {
+  list-style: none;
+}
+
+@mixin typography($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin offset($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin decor-line {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $blonde-grey;
+}

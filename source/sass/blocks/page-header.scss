@@ -1,0 +1,32 @@
+.page-header {
+  display: grid;
+}
+
+.page-header__logo-link {
+  grid-area: 1 / -1;
+  position: relative;
+  width: 102px;
+  height: 84px;
+  margin: 0 auto;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    inset: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
+}
+
+.page-header__img {
+  position: relative;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
+}
