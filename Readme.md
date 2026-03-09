@@ -1,4 +1,4 @@
-# Личный проект «projectTitle» 
+# Личный проект «Sedona» 
 
 * Студент: [Анатолий  Дегтярь](https://htmlacademy.ru/profile/antd).
 * Наставник: `Неизвестно`.
